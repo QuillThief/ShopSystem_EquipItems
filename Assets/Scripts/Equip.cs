@@ -6,10 +6,6 @@ public enum EquipMethod { Add, Replace }
 
 public class Equip : MonoBehaviour
 {
-    //Item1 of tuple are list of SpriteRenderers to enable
-    //Item2 of tuple are list of SpriteRenderers to disable
-    //private Dictionary<string, (List<SpriteRenderer>, List<SpriteRenderer>)> playerEquipment = new Dictionary<string, (List<SpriteRenderer>, List<SpriteRenderer>)>();
-
     public static Equip Instance { get; private set; }
     [SerializeField] List<EquipData> equipData;
 
